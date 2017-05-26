@@ -1,5 +1,6 @@
 package com.pranav.pranav.f2sandroid;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -135,6 +136,8 @@ public class MapActivity extends AppCompatActivity
         //getMenuInflater().inflate(R.menu.android_action_bar_spinner_menu, menu);
 
         MenuItem item = menu.findItem(R.id.action_image);
+        Intent i=new Intent(getApplicationContext(),ListActivity.class);
+        startActivity(i);
         Spinner spinner = (Spinner) MenuItemCompat.getActionView(item);
         ArrayList cat=new ArrayList();
         cat.add("All");
